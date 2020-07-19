@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #c41c00;
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    padding: 0 20px;
+    align-content: center;
+}
+
+.logo{
+    display: grid;
+}
+
+/* Links Navegacion */
+
+.bar{
+    list-style: none;
+}
+
+nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-content: center;
+    
+}
+
+.bar li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+/* Slider */
+
+.slider{
+    width: 100%;
+}
+
+/* Cuerpo Index y Footer */
+
+.grid-containerIndex, footer {
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "a b c d f";
+  }
+  
+  .a { grid-area: a; }
+  
+  .contenidoDC, .pie1 { grid-area: b; }
+  
+  .contenidoDL, .pie2 { grid-area: c; }
+  
+  .contenidoDF, .pie3 { grid-area: d; }
+
+  .f { grid-area: f; }
+
+
+/* Cuerpo Equipo */
+
+.grid-containerEquipo {
+    display: grid;
+    grid-template-columns: 10% repeat(2, 1fr) 10%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px 1em;
+    grid-template-areas: "a b b c"
+                         "a d e c";
+  }
+  
+  .a { grid-area: a; }
+
+  .contenidoNH { grid-area: b; }
+  
+  .contenidoNM { grid-area: d; }
+  
+  .contenidoNV { grid-area: e; }
+  
+  .c { grid-area: c; }
+
+  .grid-containerEquipo h2, .grid-containerEquipo h3{
+      padding-bottom: 15px;
+  }
+
+  .contenidoNH, .contenidoNM, .contenidoNV{
+      text-align: justify;
+  }
+
+/* Cuerpo Servicios */
+
+.grid-containerServicios {
+    display: grid;
+    grid-template-columns: 10% repeat(3, 1fr) 10%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px 1em;
+    grid-template-areas: "a b b b z"
+                         "a c c c z"
+                         "a d d d z";
+  }
+  
+  .a { grid-area: a; }
+
+  .contenidoSDC { grid-area: b; }
+  
+  .contenidoSDF { grid-area: c; }
+  
+  .contenidoSDL { grid-area: d; }
+  
+  .z { grid-area: z; }
+
+  .contenidoSDC, .contenidoSDF, .contenidoSDL{
+    text-align: justify;
+  }
+
+  .grid-containerServicios h2{
+      padding-bottom: 10px;
+  }
+
+  /* Cuerpo Ayuda */
+
+.grid-containerAyuda {
+    display: grid;
+    grid-template-columns: 10% repeat(2, 1fr) 10%;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px 1em;
+    grid-template-areas: "a b c z"
+                         "a d e z"
+                         "a f g z"
+                         "a h i z"
+                         "a j k z";
+  }
+  
+  .a { grid-area: a; }
+
+  .contenidoAY1 { grid-area: b; }
+
+  .contenidoAY2 { grid-area: c; }
+
+  .contenidoAY3 { grid-area: d; }
+
+  .contenidoAY4 { grid-area: e; }
+
+  .contenidoAY5 { grid-area: f; }
+
+  .contenidoAY6 { grid-area: g; }
+
+  .contenidoAY7 { grid-area: h; }
+
+  .contenidoAY8 { grid-area: i; }
+
+  .contenidoAY9 { grid-area: j; }
+
+  .contenidoAY10 { grid-area: k; }
+  
+  .z { grid-area: z; }
+
+  .grid-containerAyuda div p{
+    text-align: justify;
+  }
+
+  .grid-containerAyuda h3{
+      padding: 20px 0 10px 0;
+  }
+
+  /* Footer */
+
+  footer{
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    list-style: none;
+    color: white;
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.formulario{
+    display: flex;
+    width: 500px;
+    margin-top: 10px;
+    justify-content: space-around;
+    background-color: rgb(241, 240, 240);
+}
+
+label, select, input, textarea{
+    display: flex;
+    padding: 5px;
+    float: left;
+    width: 200px;
+    justify-content: left;
+    align-items: center;
+}
+
+.checkbox{
+    width: 200px;
+    position: relative;
+    left: -35px;
+    margin-top: 15px;
+
+}
+
+.contactenos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.boton{
+    justify-content: center;
+}
